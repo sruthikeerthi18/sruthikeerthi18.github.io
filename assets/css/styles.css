@@ -178,6 +178,8 @@ a.dotted-link:hover {
 .section .section-inner {
   background: #fff;
   padding: 30px;
+  /* text-align:justify;
+  text-justify: inter-word; */
 }
 
 .section .heading {
@@ -827,4 +829,8 @@ body[data-theme="dark"] .text-muted {
     width: 1360px;
     max-width: inherit;
   }
+}
+.content{
+  text-align:justify;
+  text-justify: inter-word;
 }

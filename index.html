@@ -59,25 +59,53 @@
                                     I, along with the team, developed a fully interactive dashboard to present real time statistics of the EMS data. This was developed using Dash, Plotly and Holium packages. The dashboard had a comprehensive view of the number of calls arriving, 
                                     number of ambulances in service, and an interactive geospatial map showing the locations of the bases of ambulances.
                                     Using the textual data injested by the EMS personnel at the centre, we developed an algorithm to identify the incident location. 
-                                    A clustering algorithm was designed to 
+                                    We combined a clustering algorithm using DBSCAN and an distance heuristic to identify the incident location.
+                                    An accuracy of 87% across five different precision levels (location, street, landmark, colony and locality) was observed for this algorithm.
+                                    <br> 
+                                    Using the identified incident locations, we designed a static allocation algorithm using optimization techniques with a custom lose function. The aim was to minize the "cost" incurred when an ambulance is allocated to a request. This algorithm optimized the usage of ambulances in the district of Chennai in Tamil Nadu by decreasing it by 13%.
                                 </p>
                             </div>
                             <div class="item">
                                 <h3 class="title">Lead Machine Learning Engineer <span class="place">Omdena</span> <span class="year">(November 2020 - Present)</span></h3>
                                 <p>
-
+                                    Omdena is a voluntary organization which specializes in solving real world problems using artificial intelligence. I was an active collaborator in three Omdena projects and I am statrting my fourth in February 2022.
+                                    <br>
+                                    <li>
+                                            Omdena WRI Land Management Project: This project focused on developing a Knowledge Graph for the unstructured data from gazatte and court documents to solve land misappropriations in Kenya. 
+                                            The raw data was collected, annotated, processed to find the important entities and then a Knowledge was constructed using the recognized entities and relationships.
+                                            I was the task leader for the Named Entity Recognition task and an active participant in the Annotations task. Along with my team, I developed models to detect the major named entities such as places, numbers and owner details using Spacy, BERT and Attention based models.  We used a custom set of tags specific to our problem statement such as Owner Name, Deed Number, Property ID etc.
+                                            We observed that the Spacy model gave the best accuracy of 96% and we extracted the entities from about 36000 gazatte documents from the time period 2005 to 2018.
+                                    </li>
+                                    <li>
+                                            Omdena FINZ Project: This project involved developing a pipeline to include geopolitical and climatic factors while scoring a proposal as feasible or non-feasible.
+                                            A pipeline which took numeric inputs to identify geopolitical risks and image data to identify climatic risks which then gave a score to the proposal based on the location input was designed.
+                                            I was an active collaborator in the data collection task where we used image sources such as Sentinal 1, 2 and 2A to collect satellite images for modelling , and the image modelling task were we developed image segmentation models to identify flood prone areas.
+                                    </li>
+                                    <li>
+                                            Omdena GlintSolar Project : This project attempts to develop a solution to the scaricity of land to install solar panels to reduce global warming. 
+                                            The pipeline developed essentially eliminates noise in the the satellite image during the depth estimation process to determine if a piece of land is feasible to install solar pannels.
+                                            I was an active collaborator in the data collection task where we collected satellite image data to identify the water depth and other affecting factors precisely.
+                                    </li>
+                                    <li>
+                                            Omdena Hashiona Project: This project attempts to find correlations, symptoms and morbidity for Hashimoto’s Disease. I have been selected as a part of this team and this project will commence in February 2022. 
+                                    </li>
                                 </p>
                             </div>
                             <div class="item">
-                                <h3 class="title">Data Science Intern <span class="place">Flutura Decision Science and Analytics, Bangalore, India</span> <span class="year">(2018 - 2019)</span></h3>
+                                <h3 class="title">Data Science Intern <span class="place">Flutura Decision Science and Analytics, Bangalore, India</span> <span class="year">(October 2020 - December 2020)</span></h3>
                                 <p>
-
+                                    During this internship, I was a part of two projects where I collaborated with organizations such as Bosch and Intel. 
+                                    I developed segmentation models to identfy defects in a package moving in the conveyer belt for Bosch factory plant in Bangalore, India. The images of the package captured from all sides was used for this purpose. The segmentation models were developed using the UNet and SDNet architectures.
+                                    I also developed optical character recognition models to identify the label number for the same plant. Neural Network architectures using custom attention layers were used for this purpose.
+                                    In order to analyse the performance of YOLO-V4 object detection models in Intel devices, I performed model optimization and performance evaluation of a sample YOLOv4 model developed on the COCO dataset using Intel OpenVino toolkit.I analysed the performance of the model on an Intel server utilising different cores and varying test dataset sizes and cumulated a detailed report for the results.
+                                    
                                 </p>
                             </div>
                             <div class="item">
                                 <h3 class="title">Project Intern <span class="place">Indian Space Reseach Organization, Bangalore, India</span> <span class="year">(2018 - 2019)</span></h3>
                                 <p>
-                                    
+                                    I worked in the Indian Deep Space Network facilty at ISRO Telemetry, Tracking and Command Network, Bangalore. I worked on developing an ensemble model to find the optimal combination of atomic clock signals to obtain the time signal with most stability. A neural network model with a custom loss fucntion to minimize the Allan deviation value of the time signal was designed.
+                                    This model provided a resultant time signal more stabilty, ie less deviation value in the range of 10^-17.
                                 </p>
                             </div>
                         </div>
@@ -86,9 +114,41 @@
                 
                 <section class="projects section">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Projects</h2>
+                        <h2 class="heading">Publications</h2>
                         <div class="content">
                             <div class="item">
+                                <h3 class="title">Automatic Incident Location Identification for EMS from Ambulance Geospatial
+                                    Data</h3>
+                                <p class="summary">Sruthikeerthi Nandita R, Goutham Zampani, Gokul S Krishnan, Gitakrishnan Ramadurai, Balaraman Ravindran. “Automatic Incident Location Identification for EMS from Ambulance Geospatial Data”, CODS-COMAD 2022
+                                    <br>
+                                    <a href="https://dl.acm.org/doi/10.1145/3493700.3493732">Paper Link</a>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <h3 class="title">An Artificial Neural Network Model for Timescale Atomic Clock Ensemble Algorithm</h3>
+                                <p class="summary">Sruthikeerthi Nandita, R., Maharana, S., Rajathilagam, B. et al. “An Artificial Neural Network Model for Timescale Atomic Clock Ensemble Algorithm.” MAPAN (2020)
+                                    <br>
+                                    <a href="https://link.springer.com/article/10.1007/s12647-020-00414-0">Paper Link</a>
+                                </p>
+
+                            </div>
+                            <div class="item">
+                                <h3 class="title">Construction of knowledge graphs for video lectures</h3>
+                                <p class="summary">
+                                    Gorla Shree Shanmukhaa, Sruthi Keerthi Nandita and Vamsee Krishna Kiran M. “Construction of Knowledge Graphs for video lectures. 2020 6th International Conference on Advanced Computing and Communication Systems (ICACCS), Coimbatore India, 2020.
+                                    <br>
+                                    <a href="https://ieeexplore.ieee.org/document/9074320">Paper Link</a>
+                                </p>                        
+                            </div>                            
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projects section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Projects</h2>
+                        <div class="content">
+                            <!-- <div class="item">
                                 <h3 class="title">Pillar - Free Boootstrap Resume/CV Template for Developers</h3>
                                 <p class="summary">Provide a brief description of your project. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatu.</p>
                             </div>
@@ -99,7 +159,7 @@
                             <div class="item">
                                 <h3 class="title">Nova - Free App Landing Page Template for App Developers</h3>
                                 <p class="summary">Provide a brief description of your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel purus enim. Etiam tortor felis, fermentum ac ultrices sed.</p>                        
-                            </div>                            
+                            </div>                             -->
                         </div>
                     </div>
                 </section>
