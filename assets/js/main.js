@@ -38,11 +38,29 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 	    }
 	);
 	rss.render();
+// var ele = document.getElementById("navbar-div");
+// var stop = (ele.offsetTop - 10);
 
-    
-    /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
-    new GitHubCalendar("#github-graph", "IonicaBizau", { responsive: true });
-    
-    
-    /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    GitHubActivity.feed({ username: "mdo", selector: "#ghfeed" });
+// window.onscroll = function (e) {
+// 	var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+// 	console.log(scrollTop, ele.offsetTop);
+// 	// left.offsetTop;
+
+// 	if (scrollTop >= stop) {
+// 		ele.className = 'navbar-class stick';
+// 	} else {
+// 		ele.className = 'navbar-class';
+// 	}
+
+// }
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    // document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    // document.getElementById("main").style.marginLeft = "0";
+  }
