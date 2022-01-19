@@ -22,12 +22,16 @@
     <header class="header">
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div>
-          <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <a href="#about" onclick="closeNav()">About Me</a>
+            <a href="#education" onclick="closeNav()">Education</a>
+            <a href="#work" onclick="closeNav()">Work Experience</a>
+            <a href="#pub" onclick="closeNav()">Publications</a>
+            <a href="#projects" onclick="closeNav()">Projects</a>
+            <a href="#certifications" onclick="closeNav()">Certifications</a>
+            <a href="#skills" onclick="closeNav()">Skills and Software Knowledge</a>
+            <a href="#achievements" onclick="closeNav()">Achievements</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
         <div class="container">     
 	        <div class="row align-items-center">
 			    <div class="col">         
@@ -36,14 +40,14 @@
 		                <h1 class="name">Sruthikeerthi Nandita Rajagopalakrishnan</h1>
 		                <h2 class="desc">Data Science Graduate Student</h2>   
 		                <ul class="social list-inline">
-		                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-		                    <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>            
+		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/sruthikeerthi-232819152/"><i class="fab fa-linkedin-in"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://github.com/sruthikeerthi18"><i class="fab fa-github-alt"></i></a></li>            
 		                </ul> 
 		            </div>
                     <aside class="info aside section">
                             <div class="content">
                                 <ul class="list-unstyled">
-                                    <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Buffalo, New York, US</li>
+                                    <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Buffalo, New York, USA</li>
                                     <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">rajagop2@buffalo.edu</a></li>
                                 </ul>
                             </div>
@@ -64,24 +68,25 @@
                         </div>
                     </div>
                 </section>
+                <section class="about section" id="education">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> MS in Data Science</h3>
+                                <p class="university">State University of New York at Buffalo, Buffalo, New York<span class="year"> (2021-Present) </span> <br><span class="year">GPA:3.2/4</span> </p>
+                            </div>
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BTech in Computer Science</h3>
+                                <p class="university">Amrita Vishwa Vidyapeetham, Coimbatore, India <span class="year"> (2016-2020) </span><br><span class="year">Graduated with distinction in the first-class category<br>GPA:9.05/10</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section class="experience section" id="work">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Work Experience</h2>
                         <div class="content">
-                            <div class="item">
-                                <h3 class="title">Project Associate <span class="place">Robert Bosch Centre for Data Science and AI, Indian Institute of Tehcnology, Madras, India</span> <span class="year">(December 2020 - July 2021)</span></h3>
-                                <p>
-                                    I worked under the guidance of Dr. Gitakrishnan Ramadurai and Dr. Balaraman Ravindran in the RBCDSAI, a funded research centre at Indian Institute of Technology, Madras at Chennai, India. 
-                                    I was a part of the team working with thr Tamil Nadu Health Systems Project to develop efficient algorithms to imporvise the Emergency Medicine System (EMS) in Tamil Nadu.
-                                    I, along with the team, developed a fully interactive dashboard to present real time statistics of the EMS data. This was developed using Dash, Plotly and Holium packages. The dashboard had a comprehensive view of the number of calls arriving, 
-                                    number of ambulances in service, and an interactive geospatial map showing the locations of the bases of ambulances.
-                                    Using the textual data injested by the EMS personnel at the centre, we developed an algorithm to identify the incident location. 
-                                    We combined a clustering algorithm using DBSCAN and an distance heuristic to identify the incident location.
-                                    An accuracy of 87% across five different precision levels (location, street, landmark, colony and locality) was observed for this algorithm.
-                                    <br> 
-                                    Using the identified incident locations, we designed a static allocation algorithm using optimization techniques with a custom lose function. The aim was to minize the "cost" incurred when an ambulance is allocated to a request. This algorithm optimized the usage of ambulances in the district of Chennai in Tamil Nadu by decreasing it by 13%.
-                                </p>
-                            </div>
                             <div class="item">
                                 <h3 class="title">Lead Machine Learning Engineer <span class="place">Omdena</span> <span class="year">(November 2020 - Present)</span></h3>
                                 <p>
@@ -106,6 +111,22 @@
                                     <li>
                                             Omdena Hashiona Project: This project attempts to find correlations, symptoms and morbidity for Hashimoto’s Disease. I have been selected as a part of this team and this project will commence in February 2022. 
                                     </li>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <h3 class="title">Project Associate <span class="place">Robert Bosch Centre for Data Science and AI, Indian Institute of Tehcnology, Madras, India</span> <span class="year">(December 2020 - July 2021)</span></h3>
+                                <p>
+                                    I worked under the guidance of Dr. Gitakrishnan Ramadurai and Dr. Balaraman Ravindran in the RBCDSAI, a funded research centre at Indian Institute of Technology, Madras at Chennai, India. 
+                                    I was a part of the team working with thr Tamil Nadu Health Systems Project to develop efficient algorithms to imporvise the Emergency Medicine System (EMS) in Tamil Nadu.
+                                    I, along with the team, developed a fully interactive dashboard to present real time statistics of the EMS data. This was developed using Dash, Plotly and Holium packages. 
+                                    The dashboard had a comprehensive view of the number of calls arriving, number of ambulances in service, and an interactive geospatial map showing the locations of the bases of ambulances.
+                                    Using the textual data injested by the EMS personnel at the centre, we developed an algorithm to identify the incident location. 
+                                    We combined a clustering algorithm using DBSCAN and an distance heuristic to identify the incident location.
+                                    An accuracy of 87% across five different precision levels (location, street, landmark, colony and locality) was observed for this algorithm.
+                                    <br> 
+                                    Using the identified incident locations, we designed a static allocation algorithm using optimization techniques with a custom loss function. 
+                                    The aim was to minimize the "cost" incurred when an ambulance is allocated to a request. 
+                                    This algorithm optimized the usage of ambulances in the district of Chennai in Tamil Nadu by decreasing it by 13%.
                                 </p>
                             </div>
                             <div class="item">
@@ -165,108 +186,157 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Projects</h2>
                         <div class="content">
-                            <!-- <div class="item">
-                                <h3 class="title">Pillar - Free Boootstrap Resume/CV Template for Developers</h3>
-                                <p class="summary">Provide a brief description of your project. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatu.</p>
+                            <div class="item">
+                                <h3 class="title">Brain MRI segmentation</h3>
+                                <p class="summary">The MRI images of brains of different patients were used to identify tumour sections using Semantic Segmentation. The UNet and SDNet architectures were used for the same.</p>
                             </div>
                             <div class="item">
-                                <h3 class="title">DevBlog - Free Boootstrap Blog Template for Developers</h3>
-                                <p class="summary">Provide a brief description of your project. Maecenas ornare ultricies risus, in fermentum augue consectetur in. Vestibulum vitae mauris iaculis, sollicitudin velit in, molestie nulla. </p>
+                                <h3 class="title">Optical Character recognition</h3>
+                                <p class="summary">A 50k image dataset was synthesised using the pre-defined text-image generation model. The dataset consists of cropped images containing the text. A CRNN architecture was built from scratch existing of convolutional layers to extract features and LSTM layers to extract the text. The model gave an accuracy of 85%. </p>
                             </div>
                             <div class="item">
-                                <h3 class="title">Nova - Free App Landing Page Template for App Developers</h3>
-                                <p class="summary">Provide a brief description of your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel purus enim. Etiam tortor felis, fermentum ac ultrices sed.</p>                        
-                            </div>                             -->
+                                <h3 class="title">Natural Image classification </h3>
+                                <p class="summary">An eight-class classifier model was built using VGG16 architecture. The pre trained model was trained on the ImageNet dataset. The project was deployed on a Nginx web server using Flask and Docker.</p>                        
+                            </div>       
+                            <div class="item">
+                                <h3 class="title">Sentiment analysis</h3>
+                                <p class="summary">
+                                    <li>SMILE dataset consisting of tweets about British museums were analysed and classified into six emotions using BERT pretrained models.</li>
+                                    <li>A restaurant reviews dataset was analysed for sentiment using basic logistic regression models and Deep Learning models using LSTM.</li>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <h3 class="title">Air Quality sensor using MQ05 and MQ09 sensors</h3>
+                                <p class="summary">An IoT prototype that provides an analysis of pollution in the surrounding. MQ05 and MQ09 sensors were connected to a NodeMCU board. Arduino language was used to program the board. The data was stored in Adafruit cloud and IFTTT actions were set to give appropriate notifications. </p>                        
+                            </div>                                         
                         </div>
                     </div>
                 </section>
-            </div>
-            <!-- <div class="secondary col-lg-4 col-12">
-                <aside class="education aside section">
+
+                <section class="projects section" id="certifications">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education</h2>
+                        <h2 class="heading">Certifications</h2>
                         <div class="content">
-                            <div class="item">                      
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> MS in Data Science</h3>
-                                <h4 class="university">State University of New York at Buffalo, Buffalo, New York<span class="year"> (2021-Present) </span> <br><span class="year">GPA:3.2/4</span> </h4>
+                            <div class="item">
+                                <h3 class="title">AWS Certified Cloud Practitioner</h3>
+                                <p class="summary">(MAY 2019 — MAY 2022) : Offered by Amazon Web Services</p>
                             </div>
                             <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BTech in Computer Science</h3>
-                                <h4 class="university">Amrita Vishwa Vidyapeetham, Coimbatore, India <span class="year"> (2016-2020) </span><br><span class="year">Graduated with distinction in the first-class category<br>GPA:9.05/10</span></h4>
+                                <h3 class="title">Deep learning specialization</h3>
+                                <p class="summary">A five-course specialization offered by deeplearning.ai in Coursera.</p>
                             </div>
+                            <div class="item">
+                                <h3 class="title">Google Cloud Platform Fundamentals: Core Infrastructure</h3>
+                                <p class="summary">Offered by Google in Coursera</p>                        
+                            </div>       
+                            <div class="item">
+                                <h3 class="title">TensorFlow developer certificate </h3>
+                                <p class="summary">
+                                    A four-course professional certificate offered by deeplearning.ai in Coursera
+                                </p>
+                            </div>
+                            <div class="item">
+                                <h3 class="title">Essential Google Cloud Infrastructure: Foundation</h3>
+                                <p class="summary">Offered by Google in Coursera</p>                        
+                            </div>   
+                            <div class="item">
+                                <h3 class="title">Big Data Specialization</h3>
+                                <p class="summary">A six-course specialization offered by UC San Diego in Coursera</p>                        
+                            </div> 
+                            <div class="item">
+                                <h3 class="title">Machine learning with TensorFlow on Google Cloud Platform</h3>
+                                <p class="summary">A five-course specialization offered by Google in Coursera </p>                        
+                            </div>                                      
                         </div>
                     </div>
-                </aside>
-                <aside class="skills aside section">
+                </section>
+                <section class="projects section" id="skills">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Skills and Software Knowledge</h2>
                         <div class="content">
                             <div class="skillset">
                                 <div class="item">
-                                    <h3 class="level-title">Python<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left">Expert</span></h3>
+                                    <h3 class="level-title">Python</h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 90%" aria-valuenow="90"  aria-valuemin="0" aria-valuemax="90"></div>
 									</div>
                                 </div>
                                 <div class="item">
-                                    <h3 class="level-title">R<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left">Expert</span></h3>
+                                    <h3 class="level-title">R</h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 90%" aria-valuenow="99"  aria-valuemin="0" aria-valuemax="90"></div>
 									</div>
                                 </div>
                                 <div class="item">
-                                    <h3 class="level-title">SQL<span class="level-label" data-bs-toggle="tooltip" data-placement="left">Pro</span></h3>
+                                    <h3 class="level-title">SQL</h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div>
                                 </div>
                                 <div class="item">
-                                    <h3 class="level-title">TensorFlow<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left">Pro</span></h3>
+                                    <h3 class="level-title">TensorFlow</h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="86"></div>
 									</div>
                                 </div>
                                 <div class="item">
-                                    <h3 class="level-title">Amazon Web Services<span class="level-label" data-bs-toggle="tooltip" data-placement="left">Pro</span></h3>
+                                    <h3 class="level-title">Amazon Web Services</h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div>
                                 </div>
                                 <div class="item">
-                                    <h3 class="level-title">KNIME<span class="level-label" data-bs-toggle="tooltip" data-placement="left">Pro</span></h3>
+                                    <h3 class="level-title">KNIME</h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div>
                                 </div>
                                 <div class="item">
-                                    <h3 class="level-title">Apache Spark<span class="level-label" data-bs-toggle="tooltip" data-placement="left">Pro</span></h3>
+                                    <h3 class="level-title">Apache Spark</h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div>
                                 </div>
                                 <div class="item">
-                                    <h3 class="level-title">Hadoop<span class="level-label" data-bs-toggle="tooltip" data-placement="left">Pro</span></h3>
+                                    <h3 class="level-title">Hadoop</h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div>
                                 </div>
                                 <div class="item">
-                                    <h3 class="level-title">MongDB<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left">Intermediate</span></h3>
+                                    <h3 class="level-title">MongoDB</h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 80%" aria-valuenow="80"  aria-valuemin="0" aria-valuemax="80"></div>
 									</div>
                                 </div>
                                 <div class="item">
-                                    <h3 class="level-title">HTML5 &amp; CSS3<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left">Intermediate</span></h3>
+                                    <h3 class="level-title">HTML5 &amp; CSS3</h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 80%" aria-valuenow="80"  aria-valuemin="0" aria-valuemax="80"></div>
 									</div>
-                                </div>
-                            </div>              
+                                </div>                            
                         </div>
                     </div>
-                </aside>
-            </div> -->
+                </section>
+                <section class="projects section" id="achievements">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Achievements</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Best Paper Award</h3>
+                                <p class="summary">
+                                    Won the Best Paper Award in the Conference of Deployable AI 2021 hosted by RBCDSAI for the abstract titled “Automated Incident Location Identification from Historic Ambulance Geospatial Data”.
+                                </p>
+                            </div>
+                            <div class="item">
+                                <h3 class="title">Member of Talk Across Generations at UNESCO MGIEP on Ethics in AI</h3>
+                                <p class="summary">Youth Representative for UNESCO MGIEP Talking Across Generations session on Ethics in AI.</p>
+                            </div>             
+                        </div>
+                    </div>
+                </section>
+            </div>
+           
         </div>
     </div>
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
